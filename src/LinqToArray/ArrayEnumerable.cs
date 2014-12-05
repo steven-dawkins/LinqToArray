@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace LinqToArray
 {
-    public class IArrayEnumerable<T> : IEnumerable<T>
+    public class ArrayEnumerable<T> : IEnumerable<T>
     {
         private readonly T[] source;
         private readonly int end;
         private readonly int start;
 
-        public IArrayEnumerable(T[] source, int start, int end)
+        public ArrayEnumerable(T[] source, int start, int end)
         {
             this.source = source;
             this.start = start;
@@ -47,19 +47,19 @@ namespace LinqToArray
             return Enumerate().GetEnumerator();
         }
 
-        public IArrayEnumerable<T> Reverse()
+        public ArrayEnumerable<T> Reverse()
         {
-            return new IArrayEnumerable<T>(this.source, this.end, this.start);
+            return new ArrayEnumerable<T>(this.source, this.end, this.start);
         }
 
-        public IArrayEnumerable<T> Skip(int amount)
+        public ArrayEnumerable<T> Skip(int amount)
         {
-            return new IArrayEnumerable<T>(this.source, this.start + amount * Direction, this.end);
+            return new ArrayEnumerable<T>(this.source, this.start + amount * Direction, this.end);
         }
 
-        public IArrayEnumerable<T> Take(int amount)
+        public ArrayEnumerable<T> Take(int amount)
         {
-            return new IArrayEnumerable<T>(this.source, this.start, this.start + (amount - 1) * Direction);
+            return new ArrayEnumerable<T>(this.source, this.start, this.start + (amount - 1) * Direction);
         }
 
         private int Direction

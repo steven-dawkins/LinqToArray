@@ -8,9 +8,9 @@ namespace LinqToArray
 {
     public static class ArrayExtensions
     {
-        public static IArrayEnumerable<T> Reverse<T>(this T[] source)
+        public static ArrayEnumerable<T> Reverse<T>(this T[] source)
         {
-            return new IArrayEnumerable<T>(source, source.Length - 1, 0);
+            return new ArrayEnumerable<T>(source, source.Length - 1, 0);
         }
     }
 }
