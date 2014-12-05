@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToArray", "LinqToArray\LinqToArray.csproj", "{F2DCA54D-7CC4-4714-A6CB-E59168929E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToArray.Tests", "LinqToArray.Tests\LinqToArray.Tests.csproj", "{D8B9CDF6-F93B-4658-96BB-6427AB6B9746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,10 @@ Global
 		{F2DCA54D-7CC4-4714-A6CB-E59168929E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2DCA54D-7CC4-4714-A6CB-E59168929E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2DCA54D-7CC4-4714-A6CB-E59168929E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B9CDF6-F93B-4658-96BB-6427AB6B9746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B9CDF6-F93B-4658-96BB-6427AB6B9746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B9CDF6-F93B-4658-96BB-6427AB6B9746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B9CDF6-F93B-4658-96BB-6427AB6B9746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
