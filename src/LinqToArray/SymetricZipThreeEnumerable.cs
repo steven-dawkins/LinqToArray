@@ -8,9 +8,9 @@ namespace LinqToArray
 {
     public class SymetricZipThreeEnumerable<T1, T2, T3, TOut> : IEnumerable<TOut>
     {
-        private readonly IEnumerable<T1> _source1;
-        private readonly IEnumerable<T2> _source2;
-        private readonly IEnumerable<T3> _source3;
+        private readonly ArrayEnumerable<T1> _source1;
+        private readonly ArrayEnumerable<T2> _source2;
+        private readonly ArrayEnumerable<T3> _source3;
         private Func<T1, T2, T3, TOut> _resultSelector;
 
         public SymetricZipThreeEnumerable(T1[] source1, T2[] source2, T3[] source3, Func<T1, T2, T3, TOut> resultSelector)
@@ -24,7 +24,7 @@ namespace LinqToArray
             _resultSelector = resultSelector;
         }
 
-        private SymetricZipThreeEnumerable(IEnumerable<T1> source1, IEnumerable<T2> source2, IEnumerable<T3> source3, Func<T1, T2, T3, TOut> resultSelector)
+        private SymetricZipThreeEnumerable(ArrayEnumerable<T1> source1, ArrayEnumerable<T2> source2, ArrayEnumerable<T3> source3, Func<T1, T2, T3, TOut> resultSelector)
         {
             _source1 = source1;
             _source2 = source2;
@@ -53,12 +53,12 @@ namespace LinqToArray
             return Enumerate().GetEnumerator();
         }
 
-        public IEnumerable<TOut> Reverse()
+        public SymetricZipThreeEnumerable<T1, T2, T3, TOut> Reverse()
         {
             return new SymetricZipThreeEnumerable<T1, T2, T3, TOut>(_source1.Reverse(), _source2.Reverse(), _source3.Reverse(), _resultSelector);
         }
 
-        public IEnumerable<TOut> Skip(int count)
+        public SymetricZipThreeEnumerable<T1, T2, T3, TOut> Skip(int count)
         {
             return new SymetricZipThreeEnumerable<T1, T2, T3, TOut>(_source1.Skip(count), _source2.Skip(count), _source3.Skip(count), _resultSelector);
         }
