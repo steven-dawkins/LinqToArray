@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Steven Dawkins, Tim Stott</authors>
+    <owners></owners>
+    <!--<licenseUrl>http://www.oxfordeconomics.com</licenseUrl>-->
+    <!--<projectUrl>http://www.oxfordeconomics.com</projectUrl>-->
+    <!--<iconUrl>http://www.oxfordeconomics.com</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Linq,Enumerable</tags>
+  </metadata>
+</package>
