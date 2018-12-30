@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.1;net45</TargetFrameworks>
     <Deterministic>false</Deterministic>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <SourceLinkCreate>true</SourceLinkCreate>
     <Description>Specialised Linq-style operators for working with arrays</Description>
   </PropertyGroup>
